@@ -15,14 +15,13 @@ class SignScreenBody extends StatelessWidget {
     return Column(
       children: [
         const SizedBox(
-          height: 150,
+          height: 200,
         ),
-        Image.asset('assets/images/logo.png'),
         const Text(
           'Hello World',
           style: TextStyle(
             color: Colors.black,
-            fontSize: 22,
+            fontSize: 25,
             fontWeight: FontWeight.w500,
           ),
         ),
@@ -32,7 +31,7 @@ class SignScreenBody extends StatelessWidget {
             'Lorem ipsum dolor sit armet  conseteure\n sadipscing elitr, sed diam nonumy eirmod\n eirmod tempor invidunt ut labore et dolore',
             style: TextStyle(
               color: Color(0xffBBBBBB),
-              fontSize: 14,
+              fontSize: 15,
               fontWeight: FontWeight.w500,
             ),
           ),
@@ -68,7 +67,7 @@ class SignScreenBody extends StatelessWidget {
                 Navigator.pushNamed(context, RegisterScreen.id);
               },
               colorText: const Color(0xff2B475E),
-              fillColor: const Color(0xffBBBBBB) ,
+              fillColor: const Color(0xffBBBBBB),
               text: 'Sign Up',
             ),
           ),
