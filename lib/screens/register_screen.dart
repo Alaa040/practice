@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:practice/constant.dart';
 
-import 'package:practice/widgets/custom_text_field.dart';
-
 import '../widgets/custom_button.dart';
+import '../widgets/custom_text_field.dart';
 
-class LoginScreen extends StatelessWidget {
-  LoginScreen({super.key});
-  static String id = 'LoginScreen';
+class RegisterScreen extends StatelessWidget {
+  RegisterScreen({super.key});
+  static String id = 'RegisterScreen';
   String? email, password;
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
     return Scaffold(
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -22,7 +19,7 @@ class LoginScreen extends StatelessWidget {
             child: Row(
               children: const [
                 Text(
-                  'Login to your Account',
+                  'Create your Account',
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 22,
@@ -55,7 +52,7 @@ class LoginScreen extends StatelessWidget {
           CustomButton(
             onPressed: () {},
             colorText: Colors.white,
-            fillColor: const Color(0xff2B475E),
+            fillColor: kMainColor,
             text: 'Sign In',
           ),
           const SizedBox(
@@ -68,34 +65,6 @@ class LoginScreen extends StatelessWidget {
               fontSize: 18,
               fontWeight: FontWeight.w400,
             ),
-          ),
-          const SizedBox(
-            height: 25,
-          ),
-          Row(
-            children: [
-              Flexible(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: CustomButtonWithIcon(
-                    onTap: () {},
-                    text: 'sign in',
-                    iconData: Icons.facebook,
-                    color: kMainColor,
-                  ),
-                ),
-              ),
-              const Flexible(
-                child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 16),
-                  child: CustomButtonWithIcon(
-                    text: 'sign in',
-                    iconData: FontAwesomeIcons.googlePlusG,
-                    color: Colors.red,
-                  ),
-                ),
-              ),
-            ],
           ),
         ],
       ),
