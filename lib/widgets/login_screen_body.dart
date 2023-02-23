@@ -16,13 +16,17 @@ class LoginScreenBody extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text(
-                  'Member Login',
-                  style: TextStyle(
-                    color: Colors.blue,
-                    fontSize: 32,
+                const Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Text(
+                    'Member Login',
+                    style: TextStyle(
+                      color: Colors.blue,
+                      fontSize: 32,
+                    ),
                   ),
                 ),
                 CustomTextField(
@@ -57,7 +61,7 @@ class LoginScreenBody extends StatelessWidget {
                       ),
                       onPressed: (() {}),
                       child: const Text(
-                        'Login',
+                        'LOGIN',
                         style: TextStyle(
                           color: Colors.white,
                         ),
